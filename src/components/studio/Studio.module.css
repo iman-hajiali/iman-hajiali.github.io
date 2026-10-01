@@ -1,0 +1,136 @@
+.stage {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100svh;
+  z-index: 3;
+  pointer-events: none;
+}
+.visual {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.stage[data-chapter="skills"] .visual,
+.stage[data-chapter="experience"] .visual,
+.stage[data-chapter="foundations"] .visual,
+.stage[data-chapter="work"] .visual {
+  background: radial-gradient(circle at 60% 38%, #fbf1e5, #e7d8c7 64%, #d9bead);
+}
+.loadingScreen {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  background: #f4ede3;
+  color: #28242a;
+  overflow: hidden;
+}
+.computer,
+.loadingLabel {
+  opacity: 0;
+  animation: revealArt 0s 220ms forwards;
+}
+.computer {
+  width: min(72vw, 330px);
+  filter: drop-shadow(0 20px 30px rgb(40 36 42 / 12%));
+}
+.monitor {
+  position: relative;
+  padding: 22px 22px 42px;
+  border: 2px solid #b7a99b;
+  border-radius: 20px 20px 12px 12px;
+  background: #e6d9c9;
+  box-shadow:
+    inset 0 3px 0 #f8f0e6,
+    inset 0 -5px 0 #d0c0af;
+}
+.screen {
+  aspect-ratio: 1.16;
+  padding: 15px;
+  border: 8px solid #39373b;
+  border-radius: 20px;
+  background: #25272b;
+  color: #f4ede3;
+  font:
+    11px/1.55 ui-monospace,
+    SFMono-Regular,
+    Consolas,
+    monospace;
+  box-shadow: inset 0 0 30px rgb(0 0 0 / 28%);
+}
+.screenTop {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgb(244 237 227 / 28%);
+  color: #efabb9;
+  letter-spacing: 0.12em;
+}
+.terminal {
+  padding-top: 18px;
+}
+.terminal p {
+  margin: 0 0 9px;
+}
+.terminal p:nth-child(2) {
+  color: #cabdb4;
+}
+.terminal p:nth-child(3) {
+  color: #efabb9;
+}
+.cursor {
+  animation: blink 1s steps(1) infinite;
+}
+.powerLight {
+  position: absolute;
+  bottom: 15px;
+  right: 21px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #7b263f;
+}
+.computerBase {
+  width: 108%;
+  height: 28px;
+  margin-left: -4%;
+  border: 2px solid #b7a99b;
+  border-top: 0;
+  border-radius: 0 0 12px 12px;
+  background: #e6d9c9;
+  box-shadow: inset 0 -5px 0 #d0c0af;
+}
+.loadingLabel {
+  font:
+    600 11px/1.5 ui-monospace,
+    SFMono-Regular,
+    Consolas,
+    monospace;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes revealArt {
+  to {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    animation: none;
+  }
+  .computer,
+  .loadingLabel {
+    opacity: 1;
+    animation: none;
+  }
+}

@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env*
+!.env.example
+
+# Private modeling experiments and local handoff notes are not website source.
+docs/
+AGENTS.md
+REVISION_2026_10_01_FA.md

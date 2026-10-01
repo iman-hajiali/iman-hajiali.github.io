@@ -1,0 +1,115 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 20;
+  height: 88px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+  padding-inline: 5.5%;
+  background: rgb(244 237 227 / 94%);
+  border-bottom: 1px solid rgb(40 36 42 / 6%);
+  backdrop-filter: blur(12px);
+}
+.monogram {
+  display: grid;
+  align-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -3px;
+  justify-self: start;
+}
+.monogram span {
+  height: 3px;
+  background: var(--cherry);
+  margin-top: 6px;
+  width: 25px;
+}
+.navigation {
+  display: flex;
+  justify-self: center;
+  gap: 24px;
+  font-size: 15px;
+}
+.navigation a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  padding-inline: 6px;
+}
+.navigation a:hover {
+  color: var(--cherry);
+}
+.contact {
+  justify-self: end;
+  background: var(--cherry);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  min-height: 44px;
+  font-size: 14px;
+}
+.toggle,
+.navigation .mobileContact {
+  display: none;
+}
+@media (max-width: 800px) {
+  .header {
+    height: 76px;
+    padding-inline: 6%;
+    grid-template-columns: 1fr auto;
+  }
+  .contact {
+    display: none;
+  }
+  .toggle {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 14px;
+    min-height: 44px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    color: var(--ink);
+    background: transparent;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    justify-self: end;
+  }
+  .toggle span {
+    font-size: 24px;
+    line-height: 1;
+  }
+  .navigation {
+    display: none;
+    position: absolute;
+    inset: 76px 0 auto;
+    padding: 16px 6% 24px;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 20px 25px rgb(40 36 42 / 8%);
+    font-size: 18px;
+  }
+  .navigation.open {
+    display: grid;
+    gap: 4px;
+  }
+  .navigation a {
+    min-height: 48px;
+    padding-inline: 12px;
+    border-radius: 6px;
+  }
+  .navigation a:hover {
+    background: #e9dfd3;
+  }
+  .navigation .mobileContact {
+    display: flex;
+    color: var(--cherry);
+  }
+}
