@@ -5,26 +5,26 @@ export const resume = {
   email: "imaanhajiali@gmail.com",
   linkedin: "https://www.linkedin.com/in/imanhajiali/",
   introduction:
-    "I design clear, consistent digital experiences, connecting UI and UX with the realities of building a product.",
+    "I shape digital products from early flows and wireframes to clear, responsive interfaces.",
   about:
-    "My experience spans e-commerce and service platforms. I work across page structure, interaction and visual design, with a front-end background that helps me collaborate closely with developers and turn ideas into working experiences.",
+    "Across e-commerce and service platforms, I turn product goals into user journeys, information architecture and interaction design. My front-end background helps me collaborate closely with developers and carry design decisions into the built experience.",
   skills: [
     {
       title: "Designing the experience",
       items: [
-        "UI & UX design",
-        "Information architecture",
-        "Responsive design",
-        "Interaction patterns",
+        "Product design",
+        "User flows & information architecture",
+        "Wireframing",
+        "Interaction design",
       ],
     },
     {
       title: "Making ideas tangible",
       items: [
+        "UI & UX design",
         "Figma Auto Layout",
-        "Components",
+        "Components & responsive patterns",
         "Interactive prototyping",
-        "Visual consistency",
       ],
     },
     {
@@ -41,26 +41,26 @@ export const resume = {
     {
       company: "Nourchi",
       category: "Electrical supplies e-commerce",
-      role: "UI/UX Design & Front-end Implementation",
+      role: "Product Designer · UI/UX & Front-end Implementation",
       date: "2025 — 2026",
       description:
-        "Designed and refined product discovery, product details, cart and checkout. Collaborated with the business owner, CMS developer and SEO team within business and technical constraints.",
+        "Shaped the shopping journey from product discovery through cart and checkout. Mapped purchase flows, developed wireframes and responsive UI, and refined product information with the business owner, CMS developer and SEO team within implementation constraints.",
     },
     {
       company: "Brandi24",
       category: "Exhibition services",
-      role: "UI/UX Design & Front-end Implementation",
+      role: "Product Designer · UI/UX & Front-end Implementation",
       date: "",
       description:
-        "Designed nine service and corporate pages, organizing content and inquiry flows around customer needs. Extended the visual identity into shared, reusable UI patterns.",
+        "Structured service discovery and inquiry journeys across nine corporate and service pages. Mapped key flows, explored wireframes and built reusable responsive UI patterns that carried the visual identity into the product experience.",
     },
     {
       company: "Shandana",
       category: "Digital menu",
-      role: "Freelance UI/UX Design",
+      role: "Freelance Product Designer · UI/UX",
       date: "",
       description:
-        "Designed a responsive digital menu with a clear and consistent browsing experience for mobile users.",
+        "Defined the mobile menu’s information hierarchy and browsing flow, then translated them into wireframes and a responsive interface for scanning categories and items.",
     },
     {
       company: "Mignet",
@@ -68,7 +68,7 @@ export const resume = {
       role: "Logo & Brand Identity Design",
       date: "",
       description:
-        "Designed the logo and contributed to the brand’s visual identity.",
+        "Designed the logo and contributed to the visual identity for an advisory marketplace, adding a brand foundation alongside my digital product work.",
     },
   ],
   education: {
@@ -84,7 +84,7 @@ export const resume = {
       type: "Mobile menu experience",
       summary: "Bringing structure and clarity to a digital menu.",
       detail:
-        "A responsive menu focused on organizing categories and items into a consistent mobile browsing experience.",
+        "Product design for a responsive digital menu: information hierarchy, browsing flow, wireframes and a consistent mobile interface for categories and items.",
       href: "https://shandana-digital-menu.pages.dev/",
     },
     {
@@ -93,7 +93,7 @@ export const resume = {
       type: "E-commerce experience",
       summary: "Connecting product discovery with the buying journey.",
       detail:
-        "UI/UX and front-end implementation across product discovery, product details, cart and checkout, in collaboration with the business owner, CMS developer and SEO team.",
+        "Product design across the e-commerce journey, from product discovery and purchase flows to wireframes, responsive UI and front-end implementation, in collaboration with the business owner, CMS developer and SEO team.",
       href: "",
     },
     {

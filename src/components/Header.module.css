@@ -81,24 +81,55 @@
     font-size: 14px;
     cursor: pointer;
     justify-self: end;
+    transition:
+      background-color 180ms ease,
+      border-color 180ms ease;
+  }
+  .toggleOpen {
+    background: #e9dfd3;
+    border-color: var(--cherry);
   }
   .toggle span {
+    display: grid;
+    place-items: center;
+    width: 20px;
+    height: 20px;
     font-size: 24px;
     line-height: 1;
+    transition: transform 180ms ease;
+  }
+  .toggleOpen span {
+    transform: rotate(45deg);
   }
   .navigation {
-    display: none;
+    display: grid;
     position: absolute;
-    inset: 76px 0 auto;
-    padding: 16px 6% 24px;
+    top: calc(100% + 8px);
+    right: 0;
+    left: auto;
+    width: min(170px, 88vw);
+    padding: 10px;
     background: var(--paper);
-    border-bottom: 1px solid var(--line);
+    border: 1px solid var(--line);
+    border-radius: 14px;
     box-shadow: 0 20px 25px rgb(40 36 42 / 8%);
-    font-size: 18px;
+    font-size: 16px;
+    gap: 2px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px) scale(0.98);
+    transform-origin: top right;
+    transition:
+      opacity 180ms ease,
+      transform 180ms ease,
+      visibility 180ms ease;
   }
   .navigation.open {
-    display: grid;
-    gap: 4px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
   }
   .navigation a {
     min-height: 48px;

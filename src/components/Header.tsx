@@ -47,14 +47,14 @@ export default function Header({ email }: { email: string }) {
       </a>
       <button
         ref={toggle}
-        className={styles.toggle}
+        className={`${styles.toggle} ${open ? styles.toggleOpen : ""}`}
         type="button"
         aria-expanded={open}
         aria-controls="main-navigation"
-        onClick={() => setOpen(!open)}
+        onClick={() => setOpen((value) => !value)}
       >
         {open ? en.closeMenu : en.menu}
-        <span aria-hidden="true">{open ? "×" : "+"}</span>
+        <span aria-hidden="true">+</span>
       </button>
       <nav
         id="main-navigation"

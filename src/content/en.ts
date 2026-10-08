@@ -52,5 +52,5 @@ export const en = {
     title: ["Something good", "starts with hello."],
     linkedin: "LinkedIn",
   },
-  footer: { top: "Back to top ↑", credit: "Designed with care." },
+  footer: { top: "Back to top ↑" },
 } as const;

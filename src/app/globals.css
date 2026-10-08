@@ -386,6 +386,9 @@ p + p {
   background: #e9dfd3;
   border-radius: 48px 48px 0 0;
 }
+.contact-scene {
+  display: none;
+}
 .contact h2 {
   font-size: clamp(3rem, 6vw, 6rem);
 }
@@ -641,18 +644,21 @@ footer a {
   .site-motion .contact {
     position: relative;
     isolation: isolate;
-  }
-  .site-motion .contact::before {
-    content: "";
-    position: absolute;
-    inset: 0;
     z-index: 4;
-    background: linear-gradient(
-      180deg,
-      rgb(233 223 211 / 92%),
-      rgb(244 237 227 / 96%)
-    );
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+  }
+  .site-motion .contact-scene {
+    display: block;
+    height: clamp(380px, 68svh, 600px);
     pointer-events: none;
+  }
+  .site-motion .contact-content {
+    min-height: 65svh;
+    padding: 65px 6% 80px;
+    background: #e9dfd3;
+    border-radius: 30px 30px 0 0;
   }
   .site-motion .contact .email {
     position: relative;

@@ -66,7 +66,8 @@ test("essential resume text is present in HTML before JavaScript", async () => {
     "Computer Engineering",
     "Persian",
     "English",
-    "Information architecture",
+    "Wireframing",
+    "Mapped purchase flows",
     "imaanhajiali@gmail.com",
   ]) {
     assert.ok(home.includes(text), `${text} is available without WebGL`);

@@ -169,31 +169,34 @@ export default function Home() {
           </div>
         </section>
         <section id="contact" className="section contact">
-          <p className="eyebrow" data-reveal>
-            {t.ending.label}
-          </p>
-          <h2 data-reveal>
-            <Lines text={t.ending.title} />
-          </h2>
-          <a className="email" href={`mailto:${r.email}`}>
-            {r.email}
-          </a>
-          <div className="actions">
-            <a
-              className="button"
-              href={r.linkedin}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {t.ending.linkedin}
+          <div className="contact-scene" aria-hidden="true" />
+          <div className="contact-content">
+            <p className="eyebrow" data-reveal>
+              {t.ending.label}
+            </p>
+            <h2 data-reveal>
+              <Lines text={t.ending.title} />
+            </h2>
+            <a className="email" href={`mailto:${r.email}`}>
+              {r.email}
             </a>
-            <a
-              className="button secondary"
-              href="/resume/Iman-Hajiali-Resume.pdf"
-              download
-            >
-              {t.download}
-            </a>
+            <div className="actions">
+              <a
+                className="button"
+                href={r.linkedin}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t.ending.linkedin}
+              </a>
+              <a
+                className="button secondary"
+                href="/resume/Iman-Hajiali-Resume.pdf"
+                download
+              >
+                {t.download}
+              </a>
+            </div>
           </div>
         </section>
       </main>
@@ -203,7 +206,6 @@ export default function Home() {
         </span>
         <a href="#home">{t.footer.top}</a>
         <MotionControl />
-        <span>{t.footer.credit}</span>
       </footer>
       <Reveal />
     </div>
